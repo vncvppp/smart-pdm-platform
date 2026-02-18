@@ -1,0 +1,42 @@
+# Create .gitignore with all necessary content
+@"
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+.out/
+.next/
+*.log
+
+# Vite cache
+.vite/
+.cache/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+"@ | Set-Content -Path .gitignore -Encoding utf8
