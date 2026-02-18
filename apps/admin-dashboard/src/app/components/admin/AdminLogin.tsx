@@ -92,18 +92,6 @@ export default function AdminLogin() {
               Sign In
             </Button>
           </form>
-
-          {/* Security Note */}
-          {staffId !== 'admin1' && (
-            <div className="mt-6 p-4 bg-red-50 border border-red-200 rounded-lg">
-              <p className="text-sm text-red-800 text-center font-medium">
-                ⚠️ Authorized personnel only
-              </p>
-              <p className="text-xs text-red-600 text-center mt-1">
-                Unauthorized access is strictly prohibited and will be logged
-              </p>
-            </div>
-          )}
         </div>
 
         {/* Footer */}
